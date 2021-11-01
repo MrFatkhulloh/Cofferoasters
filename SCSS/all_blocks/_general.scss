@@ -7,12 +7,14 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    vertical-align: middle;
+    font-family: 'Barlow', Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1320px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -38,4 +40,8 @@ h2,h3,h4 {
     overflow: hidden;
     border: none;
     clip: rect(0 0 0 0);
+}
+
+img {
+    vertical-align: middle;
 }

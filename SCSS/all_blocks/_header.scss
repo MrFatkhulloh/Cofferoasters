@@ -1,0 +1,30 @@
+.header {
+    &__container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+
+        &__list {
+            list-style-type: none;
+        }
+
+        
+        &__link {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.923077px;
+            text-transform: uppercase;
+            padding: 16px;
+        }
+        &__item {            
+
+            &:last-child a {
+                padding-right: 0;
+            }
+        }
+    }
+}

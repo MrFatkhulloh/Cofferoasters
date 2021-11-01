@@ -1,18 +1,27 @@
-/* space-mono-700 - latin */
+/* barlow-regular - latin */
 @font-face {
-  font-family: 'Space Mono';
+  font-family: 'Barlow';
   font-style: normal;
-  font-weight: 700;
-  src: local(""), url("../fonts/space-mono-v6-latin-700.woff2") format("woff2"), url("../fonts/space-mono-v6-latin-700.woff") format("woff");
+  font-weight: 400;
+  src: local(""), url("../fonts/barlow-v5-latin-regular.woff2") format("woff2"), url("../fonts/barlow-v5-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* lexend-deca-regular - latin */
+/* barlow-700 - latin */
 @font-face {
-  font-family: 'Lexend Deca';
+  font-family: 'Barlow';
   font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/lexend-deca-v10-latin-regular.woff2") format("woff2"), url("../fonts/lexend-deca-v10-latin-regular.woff") format("woff");
+  font-weight: 700;
+  src: local(""), url("../fonts/barlow-v5-latin-700.woff2") format("woff2"), url("../fonts/barlow-v5-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* fraunces-900 - latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("../fonts/fraunces-v10-latin-900.woff2") format("woff2"), url("../fonts/fraunces-v10-latin-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -26,12 +35,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  vertical-align: middle;
+  font-family: 'Barlow', Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1320px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -61,5 +72,36 @@ h2, h3, h4 {
   overflow: hidden;
   border: none;
   clip: rect(0 0 0 0);
+}
+
+img {
+  vertical-align: middle;
+}
+
+.header__container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav__list {
+  list-style-type: none;
+}
+
+.header__nav__link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  padding: 16px;
+}
+
+.header__nav__item:last-child a {
+  padding-right: 0;
 }
 /*# sourceMappingURL=main.css.map */
