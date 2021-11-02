@@ -1,0 +1,17 @@
+.our-collection {
+
+    &__list {
+        list-style-type: none;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 0 15px;
+        max-width: 285px;
+    }
+
+    &__text {
+        color: $dark-blue;
+    }
+}

@@ -1,0 +1,29 @@
+.hero {
+    &__container {
+        background-image: url(./../../images/hero/Bitmap.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 117px 702px 116px 85px;
+        border-radius: 10px;
+    }
+
+    &__heading {
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: $cream;
+        max-width: 495px;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        color: $cream;
+        opacity: 0.8;
+        max-width: 445px;
+        margin-bottom: 56px;
+    }
+
+    &__link {
+        @include button
+    }
+}
